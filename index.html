@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+  <head>
+  <h1 id="title">Job Application</h1>
+  <p id="description">Welcome to our <b>careers site</b>. Please fill out the form and a recruiter will be with you within 2-5 business days.</p>
+  </head>
+  <form id="survey-form">
+    <fieldset>
+      <section>
+    <label id="name-label">First Name:
+    <input id="name-label" type="text" placeholder="first name" required/></label>
+    <label for="name">Last Name: <input id="name" name="name" type="text" placeholder="last name" required></label>
+   <label id="email-label">Email:
+   <input id="email-label" type="email" placeholder="email" required /></label> 
+    <label for="email">Confirm your email: <input id="email" name="email" type="email" placeholder="confirm email" required></label>
+  <label id="number-label">Phone Number:
+  <input id="number-label" type="number" placeholder="phone #" required/></label> 
+    <label for="personal"><input id="personal" name="personal-business" type="radio" value="1" required>Personal</label>
+    <label for="business"><input id="business" name="personal-business" type="radio" value="2" required>Business</label>
+    <label for="number">What is your age(yrs)? <font size="2" ><i>min. 21y.o</i></font>: <input id="number" name="age" type="number" min="21" max="110" placeholder="required" required></label>
+    <label for="opportunity">How did you learn about this opportunity?: <select id="dropdown" name="opportunity">
+      <option>Select</option>
+      <option>In-store</option>
+      <option>Our website</option>
+      <option>An employee</option>
+      <option>Friend/family</option>
+      <option>Job board</option>
+      <option>Search engine</option>
+      <option>Not sure</option>
+    </select></label>
+   </section>
+    <section>
+    <h4>Work Schedule</h4>
+    <label for="days" required>What days are you available to work?: 
+      <input id="open" name="days" type="checkbox" value="1">Open availability</input>
+    <input id="mon" name="days" type="checkbox" value="2">Weekends</input>
+    <input id="mon" name="days" type="checkbox" value="3">Monday</input>
+    <input id="mon" name="days" type="checkbox" value="4">Tuesday</input>
+    <input id="mon" name="days" type="checkbox" value="5">Wednesday</input>
+    <input id="mon" name="days" type="checkbox" value="6">Thursday</input>
+    <input id="mon" name="days" type="checkbox" value="7">Friday</input>
+  </label>
+    <label for="hours">What time of day can you work?: 
+      <input id="anytime" name="hours" type="checkbox" value="1">Anytime</input>
+      <input id="morning" name="hours" type="checkbox" value="2">Morning shifts</input>
+      <input id="afternoon" name="hours" type="checkbox" value="3">Afternoon shifts</input>
+      <input id="evening" name="hours" type="checkbox" value="4">Evening shifts</input>
+      <input id="night" name="hours" type="checkbox" value="5">Night shifts</input>
+      <input id="overnight" name="hours" type="checkbox" value="6">Overnight</input>
+      </label>
+      <label for="workhours">Are you looking for?...
+        <input id="ft" name="workhours" type="radio" value="1">Full-time</input>
+        <input id="pt" name="workhours" type="radio" value="2">Part-time</input>
+        <input id="Either" name="workhours" type="radio" value="3" required>Either Part-time or Full-time</input> 
+  </section>
+  <label for="message">Message to Hiring Manager: 
+    <textarea id="message" row="10" col="10" placeholder="Introduce yourself, your skills and experience." maxlength="500" required></textarea></label>
+<input id="submit" type="Submit" value="submit">
+  </form>
+</html>
